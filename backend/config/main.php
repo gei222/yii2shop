@@ -11,6 +11,12 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    //设置语言
+    'language'=>'zh-CN',
+    //设置布局文件
+    //'layout'=>false,
+    //默认路由
+    'defaultRoute'=>'brand/index',
     'modules' => [],
     'components' => [
         'request' => [
@@ -37,14 +43,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
